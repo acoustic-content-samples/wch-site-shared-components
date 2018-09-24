@@ -1,0 +1,30 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "defaultProject": "prod-ng-shared-components",
+  "newProjectRoot": "projects",
+  "projects": {
+    "prod-ng-shared-utilities": {
+      "architect": {
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "assets": [
+            ],
+            "karmaConfig": "./test/karma.conf.js",
+            "main": "./test/test.ts",
+            "polyfills": "./test/polyfills.ts",
+            "scripts": [
+            ],
+            "styles": [
+            ],
+            "tsConfig": "./test/tsconfig.spec.json"
+          }
+        }
+      },
+      "projectType": "application",
+      "root": "",
+      "sourceRoot": "src"
+    }
+  },
+  "version": 1
+}

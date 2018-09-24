@@ -1,0 +1,13 @@
+{
+  "id": "embed-code-layout",
+  "rev": "27-38d7dd7f8ccfa88bc21b1672a8f6f048",
+  "name": "embedCodeLayout",
+  "classification": "layout",
+  "prerender": false,
+  "thumbnail": {
+    "path": "/layouts/thumbnails/embed-code-layout.jpg",
+    "url": "/authoring/v1/resources/a9b7575381cd03962dbe81e4116c8663_b4d36058090ba5438abff14a2be1cd49"
+  },
+  "template": "embed-code-layout",
+  "templateType": "angular"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "SchematicsBootstrapComponents",
+  "title": "BootstrapComponents Options Schema",
+  "type": "object",
+  "properties": {
+    "project": {
+      "type": "string",
+      "description": "The name of the project.",
+      "$default": {
+        "$source": "projectName"
+      }
+    },
+    "editable": {
+      "type": "boolean",
+      "description": "Check if we want to make the project editable.",
+      "default": true
+    }
+  },
+  "required": [],
+  "additionalProperties": false
+}

@@ -1,0 +1,56 @@
+{
+  "id": "fdee49eb-1367-4005-8bfe-7e634a4d7e0f",
+  "rev": "29-262024eef95b232524c233f08b5b958a",
+  "name": "Embed code",
+  "classification": "content-type",
+  "kind": [
+    "standalone"
+  ],
+  "description": "",
+  "status": "ready",
+  "tags": [],
+  "elements": [
+    {
+      "elementType": "text",
+      "label": "HTML",
+      "key": "html",
+      "displayType": "multiLine"
+    },
+    {
+      "elementType": "text",
+      "label": "CSS",
+      "key": "css",
+      "displayType": "multiLine"
+    },
+    {
+      "elementType": "text",
+      "label": "JS",
+      "key": "js",
+      "displayType": "multiLine"
+    },
+    {
+      "elementType": "toggle",
+      "label": "Allow full screen",
+      "key": "allowFullScreen",
+      "helpText": "Allows content (e.g. a video player) to be resized to fit the entire screen."
+    },
+    {
+      "elementType": "toggle",
+      "label": "Show scroll bars",
+      "key": "showScrollBars",
+      "helpText": "If selected, the Embed code compoenent will show scrollbars if the content surpasses the set width and height dimensions."
+    },
+    {
+      "elementType": "text",
+      "label": "Height",
+      "key": "height",
+      "helpText": "Height of Embed code compoenent (e.g. 300px, 100%). If not set, the height defaults to the height of the content."
+    },
+    {
+      "elementType": "text",
+      "label": "Width",
+      "key": "width",
+      "helpText": "Width of Embed code compoenent (e.g. 300px, 100%). If not set, the width defaults to fill available space."
+    }
+  ]
+}
