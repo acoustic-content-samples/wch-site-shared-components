@@ -21,8 +21,8 @@ import {
   rxTransformJsonFile,
   updateMinVersion
 } from '@ibm-wch-sdk/schematics-utils';
-import { assertArray, assertObject, isNotNil } from '@ibm-wch-sdk/utils';
-import { combineLatest, of } from 'rxjs';
+import {  assertObject, isNotNil } from '@ibm-wch-sdk/utils';
+import { combineLatest,Observable, of } from 'rxjs';
 import { mapTo, switchMap } from 'rxjs/operators';
 import { coerce } from 'semver';
 
@@ -87,7 +87,7 @@ function _updatePackage(
 }
 
 export function updatePackage(options: Schema): Rule {
-  return (host: Tree, context: SchematicContext) => {
+  return (host: Tree, context: SchematicContext): Observable<Tree> => {
     // load
     const rxPkg = findPackageJson(__dirname);
     const rxSdk = findSdkVersion(host);

@@ -16,9 +16,10 @@
 import {
   MergeStrategy,
   SchematicContext,
-  VirtualTree
+  VirtualTree,
+  Tree
 } from '@angular-devkit/schematics';
-import { isObservable, of } from 'rxjs';
+import { isObservable, of, Observable  } from 'rxjs';
 import { tap } from 'rxjs/operators';
 
 import { Schema } from './schema';
@@ -46,7 +47,7 @@ describe('update.package', () => {
 
     const res = updatePackage(options)(tree, context);
 
-    const rxRes = isObservable(res) ? res : of(res);
+    const rxRes = isObservable(res) ? res : of(res as Tree);
 
     return rxRes
       .pipe(
