@@ -1,5 +1,5 @@
 # wch-site-shared-components
-This npm module contains a set of shared components leveraged in the Acoustic Content (formerly Watson Content Hub) starter site applications. See https://github.com/ibm-wch/wch-site-application for more information on the Watson Content Hub starter application.
+This npm module contains a set of shared components leveraged in the Acoustic Content (formerly Watson Content Hub) starter site applications. See https://github.com/acoustic-content-samples/wch-site-application for more information on the Acoustic Content starter application.
 
 ## Prerequisites
 
